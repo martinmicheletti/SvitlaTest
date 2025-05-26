@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Website tests</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <div class="header">
+        <h1>December</h1>
+        <p class="sub-header" id="current-date">Tuesday, December 22</p>
+      </div>
+      <ul class="task-list" id="task-list">
+        <li class="task-item">
+          <span class="task-text completed">Buy new sweatshirt</span>
+          <span class="emoji">😊</span>
+        </li>
+        <li class="task-item">
+          <span class="task-text completed">Read an article</span>
+          <span class="emoji">😊</span>
+        </li>
+        <li class="task-item">
+          <span class="task-text">Write blog post</span>
+          <span class="emoji">😐</span>
+        </li>
+        <li class="task-item">
+          <span class="task-text">Watch "Mr Robot"</span>
+          <span class="emoji">😐</span>
+        </li>
+        <li class="task-item">
+          <span class="task-text">Run</span>
+          <span class="emoji">😐</span>
+        </li>
+      </ul>
+      <div class="add-task-container">
+        <input
+          type="text"
+          class="add-task-input"
+          id="new-task"
+          placeholder="Add Task"
+        />
+      </div>
+      <button class="add-button" id="add-button">Add</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

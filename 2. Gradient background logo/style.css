@@ -1,0 +1,56 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gradient-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #8db3fe;
+  background: linear-gradient(
+    193deg,
+    rgba(141, 179, 254, 1) 0%,
+    rgba(156, 182, 254, 1) 4%,
+    rgba(210, 194, 255, 1) 28%,
+    rgba(220, 196, 255, 1) 38%,
+    rgba(181, 220, 255, 1) 56%,
+    rgba(175, 224, 255, 1) 64%,
+    rgba(238, 245, 255, 1) 100%
+  );
+  z-index: -1;
+}
+
+.logo-container {
+  background-color: white;
+  width: 120px;
+  height: 120px;
+  border-radius: 2.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.bing-logo {
+  width: 4em;
+  height: auto;
+  color: #505050;
+  margin-bottom: 5px;
+}
+
+.logo-text {
+  font-family: "Roboto", sans-serif;
+  color: #505050;
+  font-size: 14px;
+}

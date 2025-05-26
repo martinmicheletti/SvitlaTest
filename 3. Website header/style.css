@@ -1,0 +1,330 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", serif;
+  font-weight: bold;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.showcase {
+  flex: 65;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 4em;
+  width: 100%;
+  background-image: url("./assets/white-dress-woman.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: contrast(0.8);
+}
+
+.showcase-content {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.image-container {
+  width: 100%;
+  height: 100%;
+  background-image: url("./assets/white-dress-woman.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.showcase-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  z-index: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-start;
+  flex: 0.5;
+  z-index: 1;
+}
+
+.menu {
+  display: flex;
+  align-items: flex-start;
+  gap: 1em;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  margin-right: 40px;
+}
+
+.menu-icon {
+  margin-right: 10px;
+}
+
+.collection-tag {
+  color: #fff;
+  font-size: 11px;
+  opacity: 0.8;
+}
+
+.middle-content {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.navigation span {
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.navigation-line {
+  width: 100px;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 0 1em;
+}
+.navigation-line-vertical {
+  width: 1px;
+  height: 100px;
+  background-color: #999;
+  margin: 0em 0.5em;
+}
+
+.bottom-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  gap: 2em;
+}
+
+.summer-title {
+  color: #fff;
+  font-size: 3em;
+  font-weight: 100;
+  line-height: 0.9;
+  font-family: "Times New Roman", Times, serif, serif;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1em;
+  align-items: flex-end;
+}
+
+.social-icons div {
+  margin-right: 20px;
+  color: #fff;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.paginator {
+  display: flex;
+  gap: 5em;
+}
+
+.paginator div {
+  color: #d6d6d6;
+  font-size: 3em;
+  cursor: pointer;
+}
+.active {
+  color: #fff;
+  font-weight: bolder;
+}
+
+.parent {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr) 0.2fr;
+  grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 1em;
+  grid-row-gap: 1.5em;
+}
+
+.div1 {
+  grid-area: 1 / 5 / 5 / 6;
+}
+.div2 {
+  grid-area: 1 / 6 / 6 / 6;
+}
+.div3 {
+  grid-area: 6 / 3 / 7 / 7;
+}
+.div4 {
+  grid-area: 4 / 1 / 7 / 3;
+  display: flex;
+  align-items: flex-end;
+}
+.div5 {
+  grid-area: 1 / 1 / 4 / 5;
+}
+.product-showcase {
+  flex: 35;
+  justify-content: space-between;
+  background-color: #f6eee3;
+  display: flex;
+  flex-direction: column;
+  padding: 4em;
+  gap: 1em;
+}
+
+.product-header {
+  display: flex;
+  justify-content: flex-end;
+  flex: 0.5;
+}
+
+.language-switch {
+  display: flex;
+  align-items: center;
+  align-items: flex-start;
+  gap: 2em;
+}
+
+.lang {
+  margin-right: 10px;
+  font-size: 12px;
+  color: #333;
+  cursor: pointer;
+}
+
+.lang-selector {
+  font-size: 12px;
+  color: #999;
+  cursor: pointer;
+}
+
+.product-content {
+  flex: 1;
+  display: flex;
+}
+
+.product-images-container {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.product-image {
+  width: 100%;
+  max-width: 10em;
+  object-fit: cover;
+}
+.product-image-button {
+  width: 100%;
+  max-width: 10em;
+  object-fit: cover;
+}
+
+.product-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.side-text {
+  width: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  align-self: flex-end;
+  gap: 2em;
+}
+
+.vertical-text {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(360deg);
+  font-size: 11px;
+  color: #999;
+  margin: 20px 0;
+}
+
+.footer-button-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+}
+
+.shop-button-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.shop-button {
+  padding: 2em 6em;
+  border: 2px solid #131313;
+  background: transparent;
+  color: #131313;
+  text-transform: uppercase;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.shop-button:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+@media screen and (max-width: 1024px) {
+  .summer-title {
+    font-size: 72px;
+  }
+
+  .navigation-line {
+    width: 70px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .showcase {
+    min-height: 60vh;
+    padding: 1.5em;
+  }
+
+  .summer-title {
+    font-size: 60px;
+    margin-bottom: 40px;
+  }
+
+  .side-text {
+    width: 20px;
+  }
+
+  .vertical-text {
+    font-size: 10px;
+  }
+}
